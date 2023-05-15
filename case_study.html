@@ -60,7 +60,7 @@
 
                 <p>A little more text because I like having it spaced out but not fully sure what I would put here.</p>
 
-                <img class="desktop" src="images/postcard_graphic.png" alt="postcard photo graphic">
+                <img class="desktop leftpostcard" src="images/postcard_graphic.png" alt="postcard photo graphic">
             </div>
             <img class="mobile" src="images/postcard_graphic.png" alt="postcard photo graphic">
             <div class="detailscard">
@@ -96,7 +96,7 @@
                 Wow this is where the description would go and it would tell you all about me and stuff and how I’m an artist and illustrator first and code monkey second. So good oh my goodness wow.
             </p>
 
-            <img src="images/postcard_graphic.png" alt="postcard graphic">
+            <img class="tile" src="images/postcard_graphic.png" alt="postcard graphic">
             </div>
         </section>
 
@@ -112,7 +112,7 @@
                 Wow this is where the description would go and it would tell you all about me and stuff and how I’m an artist and illustrator first and code monkey second. So good oh my goodness wow.
             </p>
 
-            <img src="images/polaroid_group3_graphic.png" alt="polaroid graphic group of 3">
+            <img class="tile" src="images/polaroid_group3_graphic.png" alt="polaroid graphic group of 3">
             </div>
         </section>
 
@@ -125,7 +125,7 @@
             </p>
             
 
-            <img src="images/postcard_graphic.png" alt="postcard graphic">
+            <img class="tile" src="images/postcard_graphic.png" alt="postcard graphic">
             </div>
         </section>
 
@@ -164,5 +164,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="scripts/case_study_toggle.js"></script>
     <script src="scripts/img_toggle.js"></script>
+    <script src="scripts/fadeinscroll.js"></script>
+    <!--NOT SURE WHY THE BELOW SCRIPT ISN'T WORKING-->
+    <script src="scripts/polaroidwiggles.js"></script>
+    <script>
+        document.querySelector('.detailscard').addEventListener('mouseover', function () {
+            this.style.transform = 'rotate(-3deg)';
+        });
+
+        document.querySelector('.detailscard').addEventListener('mouseout', function () {
+            this.style.transform = '';
+        });
+
+        document.querySelector('.leftpostcard').addEventListener('mouseover', function () {
+            this.style.transform = 'rotate(8deg)';
+        });
+
+        document.querySelector('.leftpostcard').addEventListener('mouseout', function () {
+            this.style.transform = '';
+        });
+
+    </script>
 
 </body>
+</html>
